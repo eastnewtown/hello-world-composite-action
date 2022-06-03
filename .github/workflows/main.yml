@@ -9,7 +9,7 @@ jobs:
       - id: foo
         #uses: actions/hello-world-composite-action@v1
         #uses: ./
-        uses: hello-world-composite-action@master
+        uses: eastnewtown/hello-world-composite-action@master
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
